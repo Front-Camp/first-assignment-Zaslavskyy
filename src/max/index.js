@@ -8,6 +8,14 @@
 */
 const max = arr => {
   /* your logic here...*/
+function getMax(arr) {
+  let arrLen = arr.length,
+      maxEl = arr[0];
+  for (let i = 0; i < arrLen; i++) {
+    if (maxEl < arr[i]) {
+      maxEl = arr[i];
+    }
+  }
+  return maxEl;
 };
-
 export default max;
